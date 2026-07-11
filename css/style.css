@@ -149,6 +149,37 @@ a:hover { text-decoration: underline; }
   color: var(--text-muted);
 }
 
+.timeline { display: flex; flex-direction: column; gap: 1rem; }
+
+.job {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  background: var(--bg-alt);
+}
+
+.job summary {
+  cursor: pointer;
+  list-style: none;
+}
+.job summary::-webkit-details-marker { display: none; }
+
+.job-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.job-title { font-weight: 700; color: var(--text); }
+.job-dates { color: var(--text-muted); font-size: 0.9rem; }
+.job-company { display: block; color: var(--accent); font-size: 0.9rem; margin-top: 0.25rem; }
+
+.job-bullets { margin: 1rem 0 0.5rem 1.25rem; color: var(--text-muted); }
+.job-bullets li { margin-bottom: 0.5rem; }
+
+.job-tech { font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+
 @media (max-width: 640px) {
   .nav-toggle { display: flex; }
   .nav-links {
