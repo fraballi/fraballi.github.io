@@ -121,6 +121,34 @@ a:hover { text-decoration: underline; }
 
 .footer-note { color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem; }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skill-group h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tag-list li {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 @media (max-width: 640px) {
   .nav-toggle { display: flex; }
   .nav-links {
